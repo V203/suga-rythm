@@ -6,7 +6,7 @@ import { Canvas, useLoader, useFrame } from '@react-three/fiber';
 import { Box, OrbitControls, useGLTF } from '@react-three/drei';
 
 import { useContext } from "react";
-import { Card, CardBody, Heading, Stack, Text, CardFooter, Button, SimpleGrid, Divider, ButtonGroup, CardHeader, Tooltip, VStack } from '@chakra-ui/react';
+import { Card, CardBody, Heading, Stack, Text, CardFooter, Button, SimpleGrid, ButtonGroup, CardHeader, Tooltip } from '@chakra-ui/react';
 import ProductsContext from '../context/ProductContext';
 // import { products } from '../Products';
 import { AddIcon, ViewIcon } from '@chakra-ui/icons';
