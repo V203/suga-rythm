@@ -57,7 +57,7 @@ export type TDoughnut = {
   name:"Strawberry",
   qty: 0,
   grand_total: function() {return this.price * this.qty},
-  doughnut_url:"/strawberryMII.glb",
+  doughnut_url:"./strawberryMII.glb",
   description:"Strawberry Icing Donut: Fluffy, golden donut with a luscious strawberry glaze—sweet, tangy, and visually enticing. A treat for all!"
 }
     ];
