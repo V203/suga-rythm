@@ -64,7 +64,7 @@ const RenderModels = (props: any) => {
 <Tooltip label={el.description}>
 
 
-            <Canvas style={{ marginRight:"1em", marginLeft:"1em",width: "auto", height: "200px",borderStyle:"none",backgroundImage:"url(/sceneDougnut.png)" }}>
+            <Canvas style={{ marginRight:"1em", marginLeft:"1em",width: "auto", height: "200px",borderStyle:"none",backgroundImage:"url(./sceneDougnut.png)" }}>
               <ambientLight />
               <OrbitControls />
               <GLTFModel url={el.doughnut_url} />

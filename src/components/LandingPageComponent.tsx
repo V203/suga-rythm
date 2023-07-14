@@ -14,10 +14,10 @@ const LandingPageComponent = () => {
 
 
                 <Stack m={"1em"} p={"1em"} justifyContent={"center"} alignItems={"center"}>
-                    <Image h={"50vh"} src={"/sceneDougnut.png"} />
+                    <Image h={"50vh"} src={"./sceneDougnut.png"} />
                     <HStack columnGap={0} width={"100%"} >
-                        <Image m={"0em"} h={"5em"} w={"40em"} src={"/sprinkleDougnut.png"} />
-                        <Image h={"5em"} m={"1em"} w={"40em"} src={"/plainDougnut.png"} />
+                        <Image m={"0em"} h={"5em"} w={"40em"} src={"./sprinkleDougnut.png"} />
+                        <Image h={"5em"} m={"1em"} w={"40em"} src={"./plainDougnut.png"} />
                     </HStack>
                     <Button boxShadow={"3px 2px 4px pink inset"} w={"7em"} size={"md"} onClick={() => navigate("/shop")} color={"whitesmoke"} bg={"pink.500"}>
                         Shop Now

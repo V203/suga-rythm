@@ -72,7 +72,7 @@ const ViewCart = () => {
 
                         <Button bg={"purple"} onClick={() => navigate("/checkout")}  >
                             <Flex gap={1} alignItems={"center"} justifyContent={"center"}>
-                                <Image my={"1em"} h={"2.5em"} w={"2.5em"} src={"/sugaRythmCart.svg"} />
+                                <Image my={"1em"} h={"2.5em"} w={"2.5em"} src={"./sugaRythmCart.svg"} />
                                 <Text fontSize={"1.5em"} color={"whitesmoke"}>
                                     Checkout
                                 </Text>
