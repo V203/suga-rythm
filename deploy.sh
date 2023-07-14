@@ -27,3 +27,4 @@ git commit -m 'deploy'
 git push -f git@github.com:V203/sugar-rythm.git main:gh-pages
 
 cd -
+# https://github.com/V203/sugar-rythm.git

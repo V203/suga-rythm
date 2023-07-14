@@ -1,7 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import  { useState, useEffect } from 'react';
 import {TDoughnut } from './Products';
