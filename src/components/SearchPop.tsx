@@ -1,10 +1,10 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react"
 import ProductsContext from "../context/ProductContext";
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import { Button, Popover, PopoverTrigger, PopoverContent, Input, InputGroup, InputLeftElement, Text, List, ListItem, Divider, Spacer, useDisclosure } from '@chakra-ui/react';
 import { SearchIcon } from "@chakra-ui/icons";
 import { TDoughnut } from "../Products";
-import Services from "../Services";
 import { motion, useAnimation } from 'framer-motion';
 
 
@@ -18,7 +18,7 @@ const SearchPop: React.FC<SearchPopoverProps> = () => {
     const controls = useAnimation()
     const { product } = useContext<any>(ProductsContext);
     const { onOpen } = useDisclosure();
-    const { services, searchQuery, setSearchQuery } = useContext<any>(ProductsContext);
+    const { searchQuery, setSearchQuery } = useContext<any>(ProductsContext);
 
     const startOpacity = () => {
         controls.start({ opacity: .5 })
@@ -33,10 +33,6 @@ const SearchPop: React.FC<SearchPopoverProps> = () => {
         setSearchQuery(event.target.value);
     };
 
-    const handleSearch = () => {
-
-        console.log('Searching for:', searchQuery);
-    };
 
     return (<Popover>
         <PopoverTrigger>

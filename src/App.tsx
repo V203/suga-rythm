@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import './App.css';
@@ -74,7 +75,9 @@ function App() {
       <Router>
         <ViewCart />
         <CustomerDetails />
-        <SelectedItem />
+        <SelectedItem price={0} name={''} qty={0} grand_total={function (): number {
+          throw new Error('Function not implemented.');
+        } } doughnut_url={''} description={''} />
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/shop" element={<Home />} />

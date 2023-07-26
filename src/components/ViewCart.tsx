@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Image, Button, Text, Drawer, DrawerOverlay, DrawerContent, DrawerHeader, DrawerBody, DrawerCloseButton, Card, CardHeader, CardFooter, CardBody, Heading, Spinner, Stack, DrawerFooter, Flex, Badge, Box, Divider } from "@chakra-ui/react"
+import { Image, Button, Text, Drawer, DrawerOverlay, DrawerContent, DrawerHeader, DrawerBody, DrawerCloseButton, Card, CardHeader, CardFooter, CardBody, Heading, Spinner, Stack, DrawerFooter, Flex, Badge, Box } from "@chakra-ui/react"
 import { OrbitControls, useGLTF } from "@react-three/drei";
 import { Canvas, useLoader } from "@react-three/fiber";
 import React, { useContext } from "react"
@@ -101,18 +101,6 @@ type GLTFModelProps = {
     url: string;
 };
 
-
-// const GLTFModel: React.FC<GLTFModelProps> = ({ url }) => {
-//   const gltf = useGLTF(url);
-//   return <primitive object={gltf.scene} />;
-// };
-
-
-
-
-
-
-
 const ViewModel: React.FC<GLTFModelProps> = ({ url }) => {
 
     const gltf = useLoader(GLTFLoader, url);
@@ -120,7 +108,6 @@ const ViewModel: React.FC<GLTFModelProps> = ({ url }) => {
     gltf.scene.scale["x"] = 30;
     gltf.scene.scale["y"] = 30
     gltf.scene.scale["z"] = 30
-
 
     return <primitive object={gltf.scene} />;
 };
