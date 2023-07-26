@@ -16,7 +16,12 @@ interface IProductsContext {
      product:any;
      setProducts:any;
      cartQTYItems:any;
-     setCartQTYItems:any
+     setCartQTYItems:any;
+     handleSearchItem:any;
+     filteredItems:any;
+     searchItem:any;
+     searchQuery:string; 
+     setSearchQuery:any
     
 }
 interface ICustomerDetails {

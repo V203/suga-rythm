@@ -20,7 +20,7 @@ const CheckoutComp = () => {
 
 <Flex alignItems={"center"} justifyContent={"center"} >
 
-        <TableContainer p={".3em"} m={"3em"} h={"100%"}>
+        <TableContainer p={".0em"} m={"3em"} h={"100%"} borderRadius={"5px"} boxShadow={"1px 2px 3px "}>
 
 
             <Table fontSize={"1.2em"} variant='simple' >
@@ -28,21 +28,21 @@ const CheckoutComp = () => {
                     An overview of the items in your cart
                 </TableCaption>
                 <Thead fontSize={"3.4em"} color={"white"}>
-                    <Tr fontSize={"3.4em"} color={"white"}>
-                        <Th>
+                    <Tr fontSize={"3.4em"} color={"white"} bgGradient={"linear(to-bl,pink.300,orange.300,pink,brown)"}>
+                        <Th fontSize={"lg"} color={"white"}>
                             Item
                         </Th>
-                        <Th>
+                        <Th fontSize={"lg"} color={"white"}>
                             Value per Item
                         </Th>
-                        <Th>
+                        <Th fontSize={"lg"} color={"white"}>
                             QTY
                         </Th>
-                        <Th>
+                        <Th fontSize={"lg"} color={"white"}>
                             Actions
                         </Th>
 
-                        <Th>
+                        <Th fontSize={"lg"} color={"white"}>
                             Sub-total
                         </Th>
                     </Tr>

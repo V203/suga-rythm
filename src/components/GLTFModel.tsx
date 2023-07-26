@@ -6,7 +6,7 @@ import { Canvas, useLoader, useFrame } from '@react-three/fiber';
 import { Box, OrbitControls, useGLTF } from '@react-three/drei';
 
 import { useContext } from "react";
-import { Card, CardBody, Heading, Stack, Text, CardFooter, Button, SimpleGrid, ButtonGroup, CardHeader, Tooltip } from '@chakra-ui/react';
+import { Card, CardBody, Heading, Stack, Text, CardFooter, Divider,Button, SimpleGrid, ButtonGroup, CardHeader, Tooltip } from '@chakra-ui/react';
 import ProductsContext from '../context/ProductContext';
 // import { products } from '../Products';
 import { AddIcon, ViewIcon } from '@chakra-ui/icons';
@@ -84,7 +84,9 @@ const RenderModels = (props: any) => {
                 QTY:  {el.qty}
               </Text>
               <Text size={"xs"}>
-                Sub-Total:<Text color={ "green"}> R{el.grand_total().toFixed(2)}</Text>
+                Sub-Total<Text fontWeight={"bold"} fontSize={"2em"} color={ "green"}> 
+                <Divider border={"1px solid pink"}/>
+                R{el.grand_total().toFixed(2)}</Text>
               </Text>
 
 </Box>

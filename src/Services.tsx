@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import {products, TDoughnut } from "./Products";
+import { products, TDoughnut } from "./Products";
 
 const Services = () => {
 
@@ -29,23 +29,39 @@ const Services = () => {
     return cart;
   }
 
-  const getGrandTotal = ()=> {
+  const getGrandTotal = () => {
 
-   const data:number = products.filter((el: any) => el.qty > 0).reduce((a: any , b:any)=>  a + b.grand_total(),0 );
+    const data: number = products.filter((el: any) => el.qty > 0).reduce((a: any, b: any) => a + b.grand_total(), 0);
 
     return data.toFixed(2);
   }
 
-  const  getSumOfItemsInCart = ()=> {
-    console.log(getCart());
-    
-    return getCart().reduce((a:any,b:any)=> a + b.qty,0);
+  const getSumOfItemsInCart = () => {
+
+
+    return getCart().reduce((a: any, b: any) => a + b.qty, 0);
+  }
+
+  const filterProducts = (param: string) => {
+    param[0].toUpperCase()
+
+    return getProducts().filter((el: TDoughnut) => el.name.toLowerCase().startsWith(param.toLowerCase()));
+
+
+  };
+
+
+  const clearCart = () => {
+    getProducts().forEach((el)=> {
+      el.qty = 0
+    })
   }
 
   return {
     add, sub, getProducts,
     getSelectedProduct, getCart,
-    getGrandTotal,getSumOfItemsInCart
+    getGrandTotal, getSumOfItemsInCart,
+    filterProducts,clearCart
   }
 
 }
