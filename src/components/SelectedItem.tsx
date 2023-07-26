@@ -3,7 +3,7 @@ import { Modal, ModalBody, ModalHeader, useDisclosure } from "@chakra-ui/react";
 import { TDoughnut } from "../Products";
 
 const SelectedItem = (param: TDoughnut) => {
-    const { isOpen, onOpen, onClose } = useDisclosure()
+    const { isOpen, onClose } = useDisclosure()
     return (
 
         <Modal isOpen={isOpen} onClose={onClose}>
