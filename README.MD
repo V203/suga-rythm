@@ -1,6 +1,6 @@
-### Suga Rythm Web-app
+# Suga Rythm Web-app
 
-## Installation Instructions
+### Installation Instructions
 
 *Clone repo*
 
