@@ -1,3 +1,5 @@
+[![Node.js CI](https://github.com/V203/sugar-rythm/actions/workflows/node.js.yml/badge.svg)](https://github.com/V203/sugar-rythm/actions/workflows/node.js.yml)
+
 # Suga Rythm Web-app
 
 ### Installation Instructions
